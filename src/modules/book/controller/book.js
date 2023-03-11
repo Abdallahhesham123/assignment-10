@@ -11,7 +11,7 @@ export const getProductModule = (req, res, next) => {
 };
 
 export const addBook = asyncHandler(async (req, res, next) => {
-  const { title, Author, User_Id, DataReturned } = req.body;
+  const { title, Author, User_Id, DataReturned ,isBorrowed} = req.body;
   const checkBook = await BookModel.findOne({ title });
   if (checkBook) {
     return next(new Error("This title book is exist pease chose another title",{cause :404}));
@@ -30,7 +30,7 @@ export const addBook = asyncHandler(async (req, res, next) => {
       title,
       Author,
       image,
-      isBorrowed: true,
+      isBorrowed,
       User_Id,
       retunedDate,
     });
@@ -68,12 +68,14 @@ export const manageBook = asyncHandler(async (req, res, next) => {
   const nowTime = Date.now();
   const books = await BookModel.find({
     retunedDate: { $lt: `${nowTime}` },
+    isBorrowed: true
   }).select("createdAt retunedDate");
+  console.log(books);
   for (const book of books) {
     const returned_date = moment(book.retunedDate);
     const now = moment(Date.now());
     const Fine_time = returned_date.diff(now, "days"); // 1
-
+        console.log(Fine_time);
     const bookmanagedcontrol = await BookMangeModel.findOne({
       "Book_Id":book._id.toString(),
 })
@@ -104,11 +106,11 @@ export const manageBookTable = asyncHandler(async (req, res, next) => {
 });
 
 export const updateBook = asyncHandler(async(req,res,next)=>{
-  console.log(req.body);
+
   const {Book_Id}= req.params;
   const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-  const fullpath= path.join(__dirname, "./../../../uploads")
+  const fullpath= path.join(__dirname,"../../../uploads")
   const book = await BookModel.findById(Book_Id)
 if(book){
   const book = await BookModel.findByIdAndUpdate(
@@ -116,13 +118,37 @@ if(book){
     req.body,
     { new: false }
   )
+console.log(book.image);
+console.log(req.body.image)
   if(book.image && book.image !== req.body.image) {
     const newdata = book.image.replace("/","\\")
-    fs.unlinkSync(`${fullpath}${newdata}`);
+    fs.unlinkSync(`${fullpath}\\${newdata}`);
   }
     return book
     ? res.json({ message: "book Updated Sucsessfully", book })
     :  next(new Error("Error-Occured During updated "));
+}else{
+  next(new Error("InValid-BookId"));
+} 
+})
+
+export const deleteBook = asyncHandler(async(req,res,next)=>{
+
+  const {Book_Id}= req.params;
+  const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+  const fullpath= path.join(__dirname,"../../../uploads")
+  const book = await BookModel.findById(Book_Id)
+if(book){
+  const book = await BookModel.findByIdAndDelete(Book_Id)
+
+  if(book.image && book.image !== req.body.image) {
+    const newdata = book.image.replace("/","\\")
+    fs.unlinkSync(`${fullpath}\\${newdata}`);
+  }
+    return book
+    ? res.json({ message: "book deleted Sucsessfully" })
+    :  next(new Error("Error-Occured During delete Book "));
 }else{
   next(new Error("InValid-BookId"));
 } 

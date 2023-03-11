@@ -17,7 +17,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MGI2OThkNGRjODk2ZTI2MDIxYTA5NiIsInVzZXJuYW1lIjoiYWJkYWxsYWgiLCJyb2xlIjoidXNlciIsIkNvdmVycGljIjpbXSwiaXNMb2dnZWRJbiI6dHJ1ZSwiaWF0IjoxNjc4NDk3Mjk0LCJleHAiOjE2ODEwODkyOTR9.PWqppHBIXzwaqPgVfJG4-ZU67GwAIqvQ3vq-TufH6mU",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MGM5NGI2NWI3ZWZlMjNkM2JiNWJhNSIsInJvbGUiOiJ1c2VyIiwiQ292ZXJwaWMiOltdLCJpc0xvZ2dlZEluIjp0cnVlLCJjb25maXJtRW1haWwiOnRydWUsImlhdCI6MTY3ODU0NjM1MiwiZXhwIjoxNjgxMTM4MzUyfQ.xxyUPaxe8dKrrPsAQTwFfoNO0N9pQ2MePky1Z78typQ",
 									"type": "string"
 								}
 							]
@@ -47,7 +47,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MGI2OThkNGRjODk2ZTI2MDIxYTA5NiIsInVzZXJuYW1lIjoiYWJkYWxsYWgiLCJyb2xlIjoidXNlciIsIkNvdmVycGljIjpbXSwiaXNMb2dnZWRJbiI6dHJ1ZSwiaWF0IjoxNjc4NDkyMDM5LCJleHAiOjE2ODEwODQwMzl9.jZQ0sGAo8Aq3ARvh1L8RaGXPG4-u3LfSTGsZ7Vpina4",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MGM5NGI2NWI3ZWZlMjNkM2JiNWJhNSIsInJvbGUiOiJ1c2VyIiwiQ292ZXJwaWMiOltdLCJpc0xvZ2dlZEluIjp0cnVlLCJjb25maXJtRW1haWwiOnRydWUsImlhdCI6MTY3ODU0NjM1MiwiZXhwIjoxNjgxMTM4MzUyfQ.xxyUPaxe8dKrrPsAQTwFfoNO0N9pQ2MePky1Z78typQ",
 									"type": "string"
 								}
 							]
@@ -60,11 +60,11 @@
 								{
 									"key": "image",
 									"type": "file",
-									"src": "/C:/Users/Abdallah_PC/Desktop/ass-10/backend/src/uploads/image/book-4.png"
+									"src": "/C:/Users/Abdallah_PC/Desktop/Movies_React/public/images/category/category-3.jpg"
 								},
 								{
 									"key": "title",
-									"value": "Secret3",
+									"value": "Secret9",
 									"type": "text"
 								},
 								{
@@ -74,17 +74,17 @@
 								},
 								{
 									"key": "isBorrowed",
-									"value": "true",
+									"value": "false",
 									"type": "text"
 								},
 								{
 									"key": "User_Id",
-									"value": "640b698d4dc896e26021a096",
+									"value": "640c94b65b7efe23d3bb5ba5",
 									"type": "text"
 								},
 								{
 									"key": "DataReturned",
-									"value": "2023-03-02",
+									"value": "2023-03-01",
 									"type": "text"
 								}
 							]
@@ -106,6 +106,16 @@
 				{
 					"name": "issuedBookSecondTable",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MGM5NGI2NWI3ZWZlMjNkM2JiNWJhNSIsInJvbGUiOiJ1c2VyIiwiQ292ZXJwaWMiOltdLCJpc0xvZ2dlZEluIjp0cnVlLCJjb25maXJtRW1haWwiOnRydWUsImlhdCI6MTY3ODU0NjM1MiwiZXhwIjoxNjgxMTM4MzUyfQ.xxyUPaxe8dKrrPsAQTwFfoNO0N9pQ2MePky1Z78typQ",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
 						"url": {
@@ -126,6 +136,16 @@
 				{
 					"name": "issuedBookTable Search",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MGM5NGI2NWI3ZWZlMjNkM2JiNWJhNSIsInJvbGUiOiJ1c2VyIiwiQ292ZXJwaWMiOltdLCJpc0xvZ2dlZEluIjp0cnVlLCJjb25maXJtRW1haWwiOnRydWUsImlhdCI6MTY3ODU0NjM1MiwiZXhwIjoxNjgxMTM4MzUyfQ.xxyUPaxe8dKrrPsAQTwFfoNO0N9pQ2MePky1Z78typQ",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
 						"url": {
@@ -152,6 +172,16 @@
 				{
 					"name": "manageBook",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MGM5NGI2NWI3ZWZlMjNkM2JiNWJhNSIsInJvbGUiOiJ1c2VyIiwiQ292ZXJwaWMiOltdLCJpc0xvZ2dlZEluIjp0cnVlLCJjb25maXJtRW1haWwiOnRydWUsImlhdCI6MTY3ODU0NjM1MiwiZXhwIjoxNjgxMTM4MzUyfQ.xxyUPaxe8dKrrPsAQTwFfoNO0N9pQ2MePky1Z78typQ",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
 						"url": {
@@ -178,6 +208,16 @@
 				{
 					"name": "thirdTableofmanagebook with fine and late",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MGM5NGI2NWI3ZWZlMjNkM2JiNWJhNSIsInJvbGUiOiJ1c2VyIiwiQ292ZXJwaWMiOltdLCJpc0xvZ2dlZEluIjp0cnVlLCJjb25maXJtRW1haWwiOnRydWUsImlhdCI6MTY3ODU0NjM1MiwiZXhwIjoxNjgxMTM4MzUyfQ.xxyUPaxe8dKrrPsAQTwFfoNO0N9pQ2MePky1Z78typQ",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
 						"url": {
@@ -196,7 +236,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "updateBook",
 					"request": {
 						"auth": {
 							"type": "bearer",
@@ -216,17 +256,22 @@
 								{
 									"key": "image",
 									"type": "file",
-									"src": "/C:/Users/Abdallah_PC/Desktop/Movies_React/public/images/category/category-3.jpg"
+									"src": "/C:/Users/Abdallah_PC/Desktop/Movies_React/public/images/category/category-1.jpg"
 								},
 								{
 									"key": "title",
 									"value": "abdallah123",
 									"type": "text"
+								},
+								{
+									"key": "DataReturned",
+									"value": "2023-05-01",
+									"type": "text"
 								}
 							]
 						},
 						"url": {
-							"raw": "http://localhost:5000/book/updateBook/640c6cae25c759c22d4cad14",
+							"raw": "http://localhost:5000/book/updateBook/640c8dfc27b3e988c4eaf85f",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -235,7 +280,38 @@
 							"path": [
 								"book",
 								"updateBook",
-								"640c6cae25c759c22d4cad14"
+								"640c8dfc27b3e988c4eaf85f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteBook",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MGM2NTYzMGIwNDcwMzBkYzE2OGQzZiIsInJvbGUiOiJ1c2VyIiwiQ292ZXJwaWMiOltdLCJpc0xvZ2dlZEluIjp0cnVlLCJjb25maXJtRW1haWwiOnRydWUsImlhdCI6MTY3ODUzNDA0NywiZXhwIjoxNjgxMTI2MDQ3fQ.R4Xv9OiJqTsGM6178r-RvIfzoE2Xr0PsaO_7ZqIww_8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/book/deleteBook/640c8cc5d97b70cc6c017dcd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"book",
+								"deleteBook",
+								"640c8cc5d97b70cc6c017dcd"
 							]
 						}
 					},
@@ -346,19 +422,20 @@
 				{
 					"name": "verify-email",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MGM2NTYzMGIwNDcwMzBkYzE2OGQzZiIsInJvbGUiOiJ1c2VyIiwiQ292ZXJwaWMiOltdLCJpc0xvZ2dlZEluIjp0cnVlLCJjb25maXJtRW1haWwiOnRydWUsImlhdCI6MTY3ODUzNDA0NywiZXhwIjoxNjgxMTI2MDQ3fQ.R4Xv9OiJqTsGM6178r-RvIfzoE2Xr0PsaO_7ZqIww_8",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "                   {\r\n                    \"otp\":\"2195\",\r\n                    \"UserId\":\"6401f89d02073bd035654b22\"\r\n                   \r\n                    }",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
 						"url": {
-							"raw": "http://localhost:5000/auth/verify-email/640b698d4dc896e26021a096/2583",
+							"raw": "http://localhost:5000/auth/verify-email/640c94b65b7efe23d3bb5ba5/4344",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -367,8 +444,8 @@
 							"path": [
 								"auth",
 								"verify-email",
-								"640b698d4dc896e26021a096",
-								"2583"
+								"640c94b65b7efe23d3bb5ba5",
+								"4344"
 							]
 						}
 					},
